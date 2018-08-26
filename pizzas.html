@@ -1,0 +1,95 @@
+<html>
+<title>
+  Pizzeria ???
+</title>
+<center>
+<head>
+<meta charset="utf-8">
+</head>
+</center>
+<p style="color:red;background-color:blue;font-family:vardana;
+font-size:50px;text-align:center">
+  Bienvenidos a la mejor Pizzeria en Santa Ana!!
+</p>
+<body bgcolor=#70db92>
+  <br>
+<center>
+  <img src="/pizza.jpg" height="150px" width="200px">
+</center>
+
+  <br>
+  <table border=1 align=center bgcolor=#b5a642>
+    <caption> Lista de Precios
+    </caption>
+    <tr>
+      <th>Tamaño
+      </th>
+      <th>Precio
+      </th>
+    </tr>
+    <tr>
+      <td>Personal
+      </td>
+      <td> $2.50
+      </td>
+    </tr>
+    <tr>
+      <td>Pequeña
+      </td>
+      <td>$4.00
+      </td>
+    </tr>
+    <tr>
+      <td>Mediana
+      </td>
+      <td>$6.00
+      </td>
+    </tr>
+    <tr>
+      <td>Grande
+      </td>
+      <td>$7.00
+      </td>
+    </tr>
+    <tr>
+      <td>Entradas
+      </td>
+      <td>$2.00
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">"Convierte tu pizza a especialidad por $2.00 adicionales"
+      </td>
+    </tr>
+  </table>
+
+<br>
+<center>
+<form action="respuesta.php" method="post">
+Cliente:
+<input type=text name=cliente size=20>
+<br><br>
+Seleccione tamaño:
+<select name="tamanio">
+  <option value="personal">Personal</option>
+  <option value="pequena">Pequeña</option>
+  <option value="mediana">Mediana</option>
+  <option value="grande">Grande</option>
+</select>
+<br>
+<br>
+Tipo:
+<input type=radio name=tipo value=regular>Regular
+<input type=radio name=tipo value=especial>Especialidad
+<br>
+<br>
+<input type=checkbox name=entrada>Con Entrada
+<br>
+<br>
+<input type=submit value=Enviar>
+<input type=reset value=Cancelar>
+</form>
+</center>
+</body>
+
+</html>
